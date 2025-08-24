@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #ffffff;
+  --panel: #f8f9fa;
+  --text: #000000;
+  --border: #e5e7eb;
+  --accent: #06b6d4;
+  --muted: #6b7280;
+  --hover: #f3f4f6;
+  
+  /* Eclipse Brand Colors */
+  --eclipse-cyan-400: #22d3ee;
+  --eclipse-cyan-500: #06b6d4;
+  --eclipse-cyan-600: #0891b2;
+  --eclipse-teal-400: #2dd4bf;
+  --eclipse-teal-500: #14b8a6;
+  --eclipse-teal-600: #0d9488;
+  --eclipse-gradient: linear-gradient(135deg, #22d3ee 0%, #14b8a6 100%);
+  --eclipse-gradient-hover: linear-gradient(135deg, #06b6d4 0%, #0d9488 100%);
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  background: #ffffff;
+  color: var(--text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
