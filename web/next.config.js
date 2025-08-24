@@ -5,10 +5,11 @@ const nextConfig = {
     typedRoutes: true
   },
   // Production optimizations
-  // output: 'standalone', // Commented out for Vercel deployment
+  output: 'standalone', // Enable standalone for proper SSR
   compress: true,
   poweredByHeader: false,
   generateEtags: false,
+  trailingSlash: false,
   
   // Image optimization
   images: {

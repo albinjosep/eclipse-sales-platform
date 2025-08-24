@@ -1,7 +1,7 @@
 'use client';
 
 import './globals.css'
-import { AuthProvider } from '../lib/auth'
+import { AuthProvider } from '../components/auth-provider'
 import { SidebarProvider } from '../lib/sidebar-context'
 import Navigation from '../components/Navigation'
 import { useAuth } from '../lib/auth'

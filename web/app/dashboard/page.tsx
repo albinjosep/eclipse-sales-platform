@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { useAuth } from '../../lib/auth';
+import { useAuth } from '@/lib/auth';
 import ProtectedRoute from '../../components/ProtectedRoute';
 import Pipeline from '../../components/Pipeline';
 import OwnerDashboard from '../../components/OwnerDashboard';

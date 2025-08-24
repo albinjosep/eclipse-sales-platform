@@ -40,8 +40,8 @@ export default function Profile() {
                       <p className="text-black font-medium mt-1">{user?.email}</p>
                     </div>
                     <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
-                      <p className="text-sm text-gray-600">User ID</p>
-                      <p className="text-black font-medium mt-1 truncate">{user?.id}</p>
+                      <p className="text-sm text-gray-600">User Name</p>
+                      <p className="text-black font-medium mt-1 truncate">{user?.user_metadata?.full_name || user?.email?.split('@')[0] || 'Not provided'}</p>
                     </div>
                   </div>
                 </div>
@@ -51,16 +51,16 @@ export default function Profile() {
                   <div className="mt-4 bg-gray-50 p-4 rounded-lg border border-gray-200 flex items-center justify-between">
                     <div>
                       <p className="text-black font-medium">
-                        {user?.email_confirmed_at ? 'Email verified' : 'Email not verified'}
+                        {user?.email ? 'Email provided' : 'No email provided'}
                       </p>
                       <p className="text-sm text-gray-600 mt-1">
-                        {user?.email_confirmed_at 
-                          ? `Verified on ${new Date(user.email_confirmed_at).toLocaleDateString()}` 
-                          : 'Please check your email to verify your account'}
+                        {user?.email 
+                          ? 'Email verification status managed by authentication provider' 
+                          : 'Please add an email to your account'}
                       </p>
                     </div>
                     <div>
-                      {user?.email_confirmed_at ? (
+                      {user?.email ? (
                         <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-900/50 text-green-400">
                           <span className="h-2 w-2 rounded-full bg-green-400 mr-1"></span>
                           Verified
