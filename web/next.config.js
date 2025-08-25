@@ -5,8 +5,7 @@ const nextConfig = {
     typedRoutes: true
   },
   // Production optimizations
-  output: 'export', // Enable static export for Netlify
-  trailingSlash: true,
+  output: 'standalone', // Enable standalone for Vercel deployment
   compress: true,
   poweredByHeader: false,
   generateEtags: false,
