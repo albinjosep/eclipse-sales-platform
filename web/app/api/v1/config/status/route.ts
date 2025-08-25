@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { validateSetup } from '@/lib/setup-validation';
+import { validateSetup } from '@/lib/setup-validation.ts';
 
 export async function GET(request: NextRequest) {
   try {

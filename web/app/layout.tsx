@@ -2,10 +2,10 @@
 
 import './globals.css'
 import { AuthProvider } from '../components/auth-provider'
-import { SidebarProvider } from '../lib/sidebar-context'
+import { SidebarProvider } from '../lib/sidebar-context.tsx'
 import Navigation from '../components/Navigation'
-import { useAuth } from '../lib/auth'
-import { useSidebar } from '../lib/sidebar-context'
+import { useAuth } from '../lib/auth.tsx'
+import { useSidebar } from '../lib/sidebar-context.tsx'
 
 // Metadata moved to root layout or page components
 

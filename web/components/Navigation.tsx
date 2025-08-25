@@ -1,10 +1,10 @@
 'use client';
 
 import Link from 'next/link';
-import { useAuth } from '../lib/auth';
+import { useAuth } from '../lib/auth.tsx';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { useSidebar } from '../lib/sidebar-context';
+import { useSidebar } from '../lib/sidebar-context.tsx';
 
 export default function Navigation() {
   const { user, signOut } = useAuth();

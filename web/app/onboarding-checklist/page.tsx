@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { CheckCircle, AlertCircle, ExternalLink, Key, Database, Bot, Mail, Calendar, CreditCard, Settings, Users, FileText, Zap, Shield, Monitor, ArrowRight, RefreshCw, Loader2, Info, AlertTriangle } from 'lucide-react';
-import { setupValidationAPI } from '@/lib/setup-validation';
+import { setupValidationAPI } from '@/lib/setup-validation.ts';
 import Link from 'next/link';
 import ProtectedRoute from '../../components/ProtectedRoute';
 

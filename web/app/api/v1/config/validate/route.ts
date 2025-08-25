@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { validateAPIKey } from '@/lib/setup-validation';
+import { validateAPIKey } from '@/lib/setup-validation.ts';
 
 export async function POST(request: NextRequest) {
   try {

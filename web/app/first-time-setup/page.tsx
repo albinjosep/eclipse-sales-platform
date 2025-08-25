@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { CheckCircle, AlertCircle, ExternalLink, Key, Database, Bot, Mail, Calendar, CreditCard, Settings, ArrowRight, ArrowLeft, RefreshCw, Eye, EyeOff, Loader2, AlertTriangle, Info, X } from 'lucide-react';
-import { setupValidationAPI, validateOpenAIKey, validateSupabaseConfig, type ValidationResult } from '@/lib/setup-validation';
+import { setupValidationAPI, validateOpenAIKey, validateSupabaseConfig, type ValidationResult } from '@/lib/setup-validation.ts';
 import Link from 'next/link';
 
 interface SetupRequirement {
