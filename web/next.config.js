@@ -5,11 +5,11 @@ const nextConfig = {
     typedRoutes: true
   },
   // Production optimizations
-  output: 'standalone', // Enable standalone for proper SSR
+  output: 'export', // Enable static export for Netlify
+  trailingSlash: true,
   compress: true,
   poweredByHeader: false,
   generateEtags: false,
-  trailingSlash: false,
   
   // Image optimization
   images: {
